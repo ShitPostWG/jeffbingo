@@ -30,5 +30,7 @@ nav > button {
   background: yellow;
 }
 #bingo > li.active {
-  background: red;
+  background-image: url('stamp.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
