@@ -11,7 +11,7 @@ function randomLoad(){
       let li = document.createElement("li");
       li.innerText = s;
       bingo.appendChild(li);
-      textFit(li, {alignHoriz: true, alignVert: true});
+      textFit(li, {alignHoriz: true, alignVert: true, multiLine: true, alignVertWithFlexbox: true});
       li.addEventListener("click", function(){this.classList.toggle("active")})
     });
 }
