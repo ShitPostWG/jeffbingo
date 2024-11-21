@@ -23,6 +23,7 @@ nav > button {
 }
 #bingo > li {
   border: 1px solid black;
+  padding: .5rem;
 }
 #bingo > li:hover,
 #bingo > li.active:hover {
