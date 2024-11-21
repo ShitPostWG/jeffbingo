@@ -11,12 +11,13 @@ nav > button {
 }
 
 #bingo {
+  --cell-size: 10rem;
   list-style: none;
   display: grid;
   margin: 1rem auto;
   width: auto;
   padding: 0;
-  grid: repeat(5, 10rem) / auto-flow 10rem;
+  grid: repeat(5, var(--cell-size)) / auto-flow var(--cell-size);
   font-family: monospace;
   justify-content: center;
 }
