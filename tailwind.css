@@ -1,7 +1,8 @@
 body {
     background-image: url("marijke's-hell.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 h1 {
