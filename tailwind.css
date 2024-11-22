@@ -1,3 +1,9 @@
+body {
+    background-image: url("marijke's-hell.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 h1 {
   text-align: center;
   font-size: 3rem;
@@ -7,7 +13,11 @@ nav {
   text-align: center;
 }
 nav > button {
-  font-size: 2rem;
+  font-size: 3rem;
+  background-color: rgba(66,153,225);
+  color: white;
+  border-color: rgb(226, 232, 240);
+  border-radius: 15px;
 }
 
 #bingo {
@@ -21,14 +31,23 @@ nav > button {
   font-family: monospace;
   justify-content: center;
 }
+
 #bingo > li {
   border: 1px solid black;
+  border-radius: 10%;
   padding: .5rem;
+  margin: 0.1rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-width: 3px;
+  cursor: pointer;
 }
-#bingo > li:hover,
-#bingo > li.active:hover {
-  background: yellow;
+
+#bingo > li:hover {
+  background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,.7)), url("hashtag-eu.avif");
+  background-size: 215%;
+  background-position: center;
 }
+
 #bingo > li.active {
   background-image: url('stamp.png');
   background-size: contain;
