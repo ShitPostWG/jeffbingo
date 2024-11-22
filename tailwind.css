@@ -21,6 +21,13 @@ nav > button {
   border-radius: 15px;
 }
 
+#autosave {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  background-color: rgba(0,0,0,0.5);
+}
+
 #bingo {
   --cell-size: 10rem;
   list-style: none;
@@ -48,7 +55,6 @@ nav > button {
   background-size: 215%;
   background-position: center;
 }
-
 #bingo > li.active {
   background-image: url('stamp.png');
   background-size: contain;

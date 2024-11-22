@@ -8,14 +8,13 @@
 </head>
 
 <body>
-  <h1>Jeff's Bingo</h1>
+  <h1>Jeff's Bingo (Now with autosave)</h1>
+
+  <ul id="bingo"></ul>
 
   <nav>
     <button id="newgrid" onclick="randomLoad()">Random card</button>
   </nav>
-
-  <ul id="bingo"></ul>
-
 
   <script type="text/javascript" src="./textFit.min.js"></script>
   <script type="text/javascript" src="./tailwind.js"></script>
@@ -59,7 +58,7 @@
   ]
   </script>
   <script type="text/javascript">
-      randomLoad()
+      loadBingo()
   </script>
 </body>
 </html>
