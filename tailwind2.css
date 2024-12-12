@@ -60,3 +60,17 @@ nav > button {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+
+#bingo.carlton > li.active {
+  background-image: url('carlton.png');
+}
+body:has(#bingo.carlton) {
+    background: none;
+}
+#bingo.carlton {
+    background-image: url("carltonbg.jpg");
+    background-position: right;
+    background-repeat: repeat-x;
+    background-size: contain;
+}
