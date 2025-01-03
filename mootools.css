@@ -10,12 +10,12 @@ h1 {
   text-align: center;
 }
 
-nav {
+.actions {
   margin: 1rem auto;
   text-align: center;
 }
 
-nav > button {
+.actions > button {
   background-color: rgba(66, 153, 225);
   border-color: rgb(226, 232, 240);
   border-radius: 15px;
