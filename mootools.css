@@ -92,8 +92,7 @@ h1 {
   font-family: monospace;
   gap: 0.25rem;
   grid: repeat(5, var(--cell-size)) / auto-flow var(--cell-size);
-  inline-size: auto;
-  justify-content: center;
+  inline-size: max-content;
   list-style-type: "";
   margin: 0 auto;
   padding: 0;
