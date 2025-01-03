@@ -80,13 +80,6 @@ ul, ol {
   }
 }
 
-#autosave {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-size: 3rem;
-  text-align: center;
-}
-
 #bingo {
   --cell-size: 10rem;
   display: grid;
