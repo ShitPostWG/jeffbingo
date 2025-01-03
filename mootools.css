@@ -33,10 +33,6 @@ body {
   padding: 2vh 3vw;
 }
 
-main > * + * {
-  margin-block-start: var(--layout-gap);
-}
-
 h1 {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 0.25rem;
@@ -48,9 +44,14 @@ h1 {
   text-wrap: balance;
 }
 
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
 .grid-wrapper {
-  margin-block-start: var(--layout-gap);
   overflow-x: auto;
+  padding-block: var(--layout-gap);
 }
 
 .actions ul {
@@ -94,8 +95,7 @@ h1 {
   grid: repeat(5, var(--cell-size)) / auto-flow var(--cell-size);
   inline-size: max-content;
   list-style-type: "";
-  margin: 0 auto;
-  padding: 0;
+  margin-inline: auto;
 
   & > li {
     background: rgba(255, 255, 255, 0.8);
@@ -123,17 +123,21 @@ h1 {
   }
 }
 
-#bingo.carlton > li.active {
-  background-image: url("images/carlton.png");
-}
-
 body:has(#bingo.carlton) {
   background: none;
-}
 
-#bingo.carlton {
-  background-image: url("images/carltonbg.jpg");
-  background-position: right;
-  background-repeat: repeat-x;
-  background-size: contain;
+  & .grid-wrapper {
+    background-image: url("images/carltonbg.jpg");
+    background-position: right;
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+
+  & #bingo > li.active {
+    background-image: url("images/carlton.png");
+  }
+
+  & .actions {
+    margin-block-start: var(--layout-gap);
+  }
 }
