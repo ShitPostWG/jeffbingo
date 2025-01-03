@@ -77,32 +77,32 @@ h1 {
   list-style-type: "";
   margin: 0 auto;
   padding: 0;
-}
 
-#bingo > li {
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid black;
-  border-radius: 1rem;
-  border-width: 3px;
-  cursor: pointer;
-  margin: 0.1rem;
-  padding: 0.5rem;
-}
+  & > li {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    border-radius: 1rem;
+    border-width: 3px;
+    cursor: pointer;
+    margin: 0.1rem;
+    padding: 0.5rem;
 
-#bingo > li:hover {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.7)
-    ),
-    url("images/hashtag-eu.avif");
-  background-position: center;
-  background-size: 215%;
-}
+    &:hover {
+      background: linear-gradient(
+          rgba(255, 255, 255, 0.7),
+          rgba(255, 255, 255, 0.7)
+        ),
+        url("images/hashtag-eu.avif");
+      background-position: center;
+      background-size: 215%;
+    }
 
-#bingo > li.active {
-  background-image: url("images/stamp.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+    &.active {
+      background-image: url("images/stamp.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
 }
 
 #bingo.carlton > li.active {
