@@ -1,8 +1,8 @@
 body {
-    background-image: url("images/marijke's-hell.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: url("images/marijke's-hell.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 h1 {
@@ -15,7 +15,7 @@ nav {
 }
 nav > button {
   font-size: 3rem;
-  background-color: rgba(66,153,225);
+  background-color: rgba(66, 153, 225);
   color: white;
   border-color: rgb(226, 232, 240);
   border-radius: 15px;
@@ -25,7 +25,7 @@ nav > button {
   text-align: center;
   color: white;
   font-size: 3rem;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #bingo {
@@ -43,7 +43,7 @@ nav > button {
 #bingo > li {
   border: 1px solid black;
   border-radius: 10%;
-  padding: .5rem;
+  padding: 0.5rem;
   margin: 0.1rem;
   background: rgba(255, 255, 255, 0.8);
   border-width: 3px;
@@ -51,26 +51,29 @@ nav > button {
 }
 
 #bingo > li:hover {
-  background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,.7)), url("images/hashtag-eu.avif");
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("images/hashtag-eu.avif");
   background-size: 215%;
   background-position: center;
 }
 #bingo > li.active {
-  background-image: url('images/stamp.png');
+  background-image: url("images/stamp.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-
 #bingo.carlton > li.active {
-  background-image: url('images/carlton.png');
+  background-image: url("images/carlton.png");
 }
 body:has(#bingo.carlton) {
-    background: none;
+  background: none;
 }
 #bingo.carlton {
-    background-image: url("images/carltonbg.jpg");
-    background-position: right;
-    background-repeat: repeat-x;
-    background-size: contain;
+  background-image: url("images/carltonbg.jpg");
+  background-position: right;
+  background-repeat: repeat-x;
+  background-size: contain;
 }
