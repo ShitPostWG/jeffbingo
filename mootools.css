@@ -1,53 +1,53 @@
 body {
   background-image: url("images/marijke's-hell.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 h1 {
-  text-align: center;
   font-size: 3rem;
+  text-align: center;
 }
 nav {
   margin: 1rem auto;
   text-align: center;
 }
 nav > button {
-  font-size: 3rem;
   background-color: rgba(66, 153, 225);
-  color: white;
   border-color: rgb(226, 232, 240);
   border-radius: 15px;
+  color: white;
+  font-size: 3rem;
 }
 
 #autosave {
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-size: 3rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
 #bingo {
   --cell-size: 10rem;
-  list-style: none;
   display: grid;
-  margin: 1rem auto;
-  inline-size: auto;
-  padding: 0;
-  grid: repeat(5, var(--cell-size)) / auto-flow var(--cell-size);
   font-family: monospace;
+  grid: repeat(5, var(--cell-size)) / auto-flow var(--cell-size);
+  inline-size: auto;
   justify-content: center;
+  list-style: none;
+  margin: 1rem auto;
+  padding: 0;
 }
 
 #bingo > li {
+  background: rgba(255, 255, 255, 0.8);
   border: 1px solid black;
   border-radius: 10%;
-  padding: 0.5rem;
-  margin: 0.1rem;
-  background: rgba(255, 255, 255, 0.8);
   border-width: 3px;
   cursor: pointer;
+  margin: 0.1rem;
+  padding: 0.5rem;
 }
 
 #bingo > li:hover {
@@ -56,13 +56,13 @@ nav > button {
       rgba(255, 255, 255, 0.7)
     ),
     url("images/hashtag-eu.avif");
-  background-size: 215%;
   background-position: center;
+  background-size: 215%;
 }
 #bingo > li.active {
   background-image: url("images/stamp.png");
-  background-size: contain;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #bingo.carlton > li.active {
