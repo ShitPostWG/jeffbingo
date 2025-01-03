@@ -33,7 +33,7 @@ nav > button {
   list-style: none;
   display: grid;
   margin: 1rem auto;
-  width: auto;
+  inline-size: auto;
   padding: 0;
   grid: repeat(5, var(--cell-size)) / auto-flow var(--cell-size);
   font-family: monospace;
