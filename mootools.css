@@ -40,16 +40,20 @@ h1 {
   overflow-x: auto;
 }
 
-.actions {
-  text-align: center;
-}
+.actions ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--element-gap);
+  justify-content: center;
+  list-style-type: "";
 
-.actions > button {
-  background-color: rgba(66, 153, 225);
-  border-color: rgb(226, 232, 240);
-  border-radius: 15px;
-  color: white;
-  font-size: 3rem;
+  & button {
+    background-color: rgba(66, 153, 225);
+    border-color: rgb(226, 232, 240);
+    border-radius: 15px;
+    color: white;
+    font-size: 3rem;
+  }
 }
 
 #autosave {
