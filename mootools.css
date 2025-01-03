@@ -30,7 +30,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 3vh 4vw;
+  padding: 2vh 3vw;
 }
 
 main > * + * {
