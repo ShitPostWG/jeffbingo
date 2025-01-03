@@ -50,7 +50,7 @@ h1 {
   & button {
     background-color: rgba(66, 153, 225);
     border-color: rgb(226, 232, 240);
-    border-radius: 15px;
+    border-radius: 1rem;
     color: white;
     font-size: 3rem;
   }
@@ -78,7 +78,7 @@ h1 {
 #bingo > li {
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid black;
-  border-radius: 10%;
+  border-radius: 1rem;
   border-width: 3px;
   cursor: pointer;
   margin: 0.1rem;
