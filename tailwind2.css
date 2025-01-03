@@ -1,5 +1,5 @@
 body {
-    background-image: url("marijke's-hell.jpg");
+    background-image: url("images/marijke's-hell.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -51,25 +51,25 @@ nav > button {
 }
 
 #bingo > li:hover {
-  background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,.7)), url("hashtag-eu.avif");
+  background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,.7)), url("images/hashtag-eu.avif");
   background-size: 215%;
   background-position: center;
 }
 #bingo > li.active {
-  background-image: url('stamp.png');
+  background-image: url('images/stamp.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 
 #bingo.carlton > li.active {
-  background-image: url('carlton.png');
+  background-image: url('images/carlton.png');
 }
 body:has(#bingo.carlton) {
     background: none;
 }
 #bingo.carlton {
-    background-image: url("carltonbg.jpg");
+    background-image: url("images/carltonbg.jpg");
     background-position: right;
     background-repeat: repeat-x;
     background-size: contain;
