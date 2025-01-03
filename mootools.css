@@ -23,6 +23,10 @@ h1 {
   text-align: center;
 }
 
+.grid-wrapper {
+  overflow-x: auto;
+}
+
 .actions {
   margin: 1rem auto;
   text-align: center;
