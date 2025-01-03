@@ -21,6 +21,7 @@ body {
 h1 {
   font-size: 3rem;
   text-align: center;
+  text-wrap: balance;
 }
 
 .grid-wrapper {
