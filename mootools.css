@@ -21,8 +21,12 @@ https://www.tpgi.com/the-anatomy-of-visually-hidden/
 }
 
 :root {
+  --line-height: 1.15;
+
   --layout-gap: 2rem;
   --element-gap: 0.5rem;
+
+  --footer-v-padding: 10px;
 }
 
 body {
@@ -30,7 +34,21 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 2vh 3vw;
+  font-size: 1rem;
+  line-height: var(--line-height);
+  /* Try to manually correct the space above the footer; works best on desktop */
+  padding: 2vh 3vw calc(2vh + 2 * (var(--line-height) * 1em));
+}
+
+footer {
+  background-color: #f5f5dc;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  inset-block-end: 0;
+  inset-inline-end: 0;
+  inset-inline-start: 0;
+  padding: var(--footer-v-padding);
+  position: fixed;
+  text-align: center;
 }
 
 h1 {
